@@ -1,5 +1,6 @@
 package src;
 
+import java.util.Random;
 public class Player {
     private String playerName;
     private Hand hand;
@@ -17,5 +18,18 @@ public class Player {
     }
     public void setHand(Hand hand) {
         this.hand = hand;
+    }
+
+    public void createRandomHand() {
+        Random random = new Random();
+        int randomValue = random.nextInt(3);
+
+        if(randomValue == 0) {
+            this.hand = new Gu();
+        } else if(randomValue == 1) {
+            this.hand = new Choki();
+        } else {
+            this.hand = new Pa();
+        }
     }
 }

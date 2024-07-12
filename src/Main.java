@@ -43,7 +43,9 @@ public class Main {
             return;
         }
 
+        //comの手を生成
+        com.createRandomHand();
+
         // テストコード
-        System.out.println(user.getHand().getHandName());
     }
 }
