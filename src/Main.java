@@ -46,6 +46,7 @@ public class Main {
         //comの手を生成
         com.createRandomHand();
 
-        // テストコード
+        //勝敗決定
+        //int result = game.judge(user, com);
     }
 }
